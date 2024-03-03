@@ -14,10 +14,10 @@ sns.set(style='dark')
 #load data
 @st.cache_resource
 def create_df_hour():
-    data = pd.read_csv("https://github.com/JasonChristopher03/Dicoding-Belajar-Analaisis-Data-dengan-Python-Project/blob/main/Streamlit/dataset/Bike-sharing-dataset/cleaned_day.csv")
+    data = pd.read_csv(r"./dataset/Bike-sharing-dataset/cleaned_day.csv")
     return data
 def create_df_day():
-    data = pd.read_csv("https://github.com/JasonChristopher03/Dicoding-Belajar-Analaisis-Data-dengan-Python-Project/blob/main/Streamlit/dataset/Bike-sharing-dataset/cleaned_hour.csv")
+    data = pd.read_csv(r"./dataset/Bike-sharing-dataset/cleaned_hour.csv")
     return data
 
 df_hour = create_df_hour()
