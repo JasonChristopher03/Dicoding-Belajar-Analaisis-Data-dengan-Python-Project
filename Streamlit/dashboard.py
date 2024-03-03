@@ -49,7 +49,7 @@ df_main_day = df_day[(df_day['dteday'] >= str(start_date)) &
                 (df_day['dteday'] <= str(end_date))]
 
 #header
-st.header('Bike Sharing Dashboard :bike::thumbs-up:')
+st.header('Bike Sharing Dashboard :bike: :thumbs-up:')
 
 #daily rental
 st.subheader('Daily Rental')
